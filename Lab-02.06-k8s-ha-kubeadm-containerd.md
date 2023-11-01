@@ -109,7 +109,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 - Install HAproxy package on the system as mentioned below, this command will pull the package from Ubuntu repo
     - sudo apt install -y haproxy
 - Now, update haproxy configuration file with frontend and backend server details of controlplane nodes
-    - Open /etc/haproxyhaproxy.cfg and update below context, but replace IP address with the controlplane node IP addresses as per your network configuration
+    - Open /etc/haproxy/haproxy.cfg and update below context, but replace IP address with the controlplane node IP addresses as per your network configuration
 ```
 global
         log /dev/log    local0
