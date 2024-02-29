@@ -124,7 +124,10 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 - calico network for kubernetes CNI
 - [Calico Document](https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart)
 ```
+# Install the Tigera Calico operator and custom resource definitions.
 kubectl create -f https://docs.projectcalico.org/manifests/tigera-operator.yaml
+
+# Download ustom resource yaml file and edit file and replace cidr range as per we using subnet for POD as 10.244.0.0/16
 wget https://docs.projectcalico.org/manifests/custom-resources.yaml
 
 or
