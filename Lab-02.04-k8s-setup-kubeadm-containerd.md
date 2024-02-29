@@ -115,12 +115,12 @@ sudo apt-mark hold kubelet kubeadm kubectl
 - 192.168.1.90 is control plane node ip address
 ```
 kubeadm init --apiserver-advertise-address=192.168.1.90 --cri-socket=/run/containerd/containerd.sock --pod-network-cidr=10.244.0.0/16
-```
+
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
-```
+
 - calico network for kubernetes CNI
 - [Calico Document](https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart)
 ```
