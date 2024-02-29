@@ -81,6 +81,7 @@ EOF
 
 ```
 
+## Installing kubeadm, kubelet and kubectl
 - Install kubernetes packages on all nodes.
 ```
 sudo apt-get update
